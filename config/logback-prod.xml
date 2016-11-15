@@ -2,9 +2,9 @@
 <configuration scan="true">
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    	<File>../logs/{TEMPLATE_PROJECT_NAME}.log</File>
+    	<File>../logs/TEMPLATE_PROJECT_NAME.log</File>
     	<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-    		<FileNamePattern>../logs/{TEMPLATE_PROJECT_NAME}.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+    		<FileNamePattern>../logs/TEMPLATE_PROJECT_NAME.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
     	</rollingPolicy>
     									 
 	<layout class="ch.qos.logback.classic.PatternLayout">
