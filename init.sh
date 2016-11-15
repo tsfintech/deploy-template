@@ -1,5 +1,5 @@
 #!/bin/bash
-BASEDIR=$(dirname "$0")
+BASEDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 read -p "What is the name of the service?" SERVICE_NAME
 sed -i -e "s/TEMPLATE_PROJECT_NAME/$SERVICE_NAME/g" bin/service-name config/logback-prod.xml config/wrapper.conf
